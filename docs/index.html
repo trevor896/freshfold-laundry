@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="Thoughtful laundry and dry cleaning in Gaborone. Book a convenient pickup for your home, wardrobe or business.">
+  <title>FreshFold — Laundry, made lighter | Gaborone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="FreshFold home">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/lucide-icons/icons/sparkles.svg" alt=""></span>
+        <span>freshfold<span class="brand-period">.</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <img src="assets/lucide-icons/icons/menu.svg" alt="">
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#areas">Our area</a>
+        <button class="nav-login" type="button" disabled aria-label="Log in, coming soon" title="Customer login is coming soon">Log in</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-media" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/photos/hero-laundry.jpg" tabindex="-1">
+          <source src="assets/video/hero-vid.mp4" type="video/mp4">
+        </video>
+        <div class="hero-image-shade"></div>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> Gaborone's neighbourhood laundry</p>
+          <h1>Laundry, off<br>your <em>mind.</em></h1>
+          <p class="hero-intro">We pick up, clean with care and bring it back fresh. You get a little more room for the rest of your day.</p>
+          <form class="pickup-widget" id="hero-pickup-form" aria-label="Choose pickup timing and enter your address">
+            <div class="pickup-time">
+              <span class="pickup-label">Pickup</span>
+              <span class="pickup-period" id="pickup-period" aria-live="polite">Tonight</span>
+            </div>
+            <label class="pickup-address" for="hero-address">
+              <span class="pickup-label">Where</span>
+              <input id="hero-address" name="address" autocomplete="street-address" placeholder="Add address" required>
+            </label>
+            <button class="pickup-submit" type="submit" aria-label="Continue with this pickup address">
+              <img src="assets/lucide-icons/icons/arrow-right.svg" alt="">
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="logo-showcase" aria-label="Business logos">
+        <div class="logo-marquee" aria-hidden="true">
+          <div class="logo-track">
+            <div class="logo-set">
+              <span class="business-logo"><img src="assets/logos/airbnb.svg" alt=""><span>Airbnb</span></span>
+              <span class="business-logo"><img src="assets/logos/bookingdotcom.svg" alt=""><span>Booking.com</span></span>
+              <span class="business-logo"><img src="assets/logos/expedia.svg" alt=""><span>Expedia</span></span>
+              <span class="business-logo"><img src="assets/logos/hilton.svg" alt=""><span>Hilton</span></span>
+              <span class="business-logo"><img src="assets/logos/marriott.svg" alt=""><span>Marriott</span></span>
+              <span class="business-logo"><img src="assets/logos/tripadvisor.svg" alt=""><span>Tripadvisor</span></span>
+              <span class="business-logo"><img src="assets/logos/trivago.svg" alt=""><span>trivago</span></span>
+              <span class="business-logo"><img src="assets/logos/hotelsdotcom.svg" alt=""><span>Hotels.com</span></span>
+            </div>
+            <div class="logo-set">
+              <span class="business-logo"><img src="assets/logos/airbnb.svg" alt=""><span>Airbnb</span></span>
+              <span class="business-logo"><img src="assets/logos/bookingdotcom.svg" alt=""><span>Booking.com</span></span>
+              <span class="business-logo"><img src="assets/logos/expedia.svg" alt=""><span>Expedia</span></span>
+              <span class="business-logo"><img src="assets/logos/hilton.svg" alt=""><span>Hilton</span></span>
+              <span class="business-logo"><img src="assets/logos/marriott.svg" alt=""><span>Marriott</span></span>
+              <span class="business-logo"><img src="assets/logos/tripadvisor.svg" alt=""><span>Tripadvisor</span></span>
+              <span class="business-logo"><img src="assets/logos/trivago.svg" alt=""><span>trivago</span></span>
+              <span class="business-logo"><img src="assets/logos/hotelsdotcom.svg" alt=""><span>Hotels.com</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Good care, your way</p>
+            <h2>Clean clothes.<br><em>Clear head.</em></h2>
+          </div>
+          <p class="section-intro">From Monday-morning shirts to the duvet you love, we make it easy to feel good in what you wear and live with.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card service-featured">
+            <div class="photo-placeholder service-photo photo-wash">
+              <img src="assets/photos/wash-and-fold.jpg" alt="Laundry being handled at a laundromat" loading="lazy">
+            </div>
+            <div class="service-copy">
+              <div><p class="card-kicker">01 / EVERYDAY CARE</p><h3>Wash &amp; fold</h3></div>
+              <p>Everyday favourites, washed gently, dried just right and folded neatly for home.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="photo-placeholder service-photo photo-press">
+              <img src="assets/photos/dry-cleaning.jpg" alt="Freshly pressed clothes hanging neatly in a wardrobe" loading="lazy">
+            </div>
+            <div class="service-copy">
+              <div><p class="card-kicker">02 / SPECIAL CARE</p><h3>Dry cleaning</h3></div>
+              <p>Suits, dresses and delicate pieces handled with a little extra attention.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="photo-placeholder service-photo photo-home">
+              <img src="assets/photos/fresh-towels.jpg" alt="Fresh towels ready after a wash" loading="lazy">
+            </div>
+            <div class="service-copy">
+              <div><p class="card-kicker">03 / HOME COMFORT</p><h3>Linen &amp; bedding</h3></div>
+              <p>Fresh sheets, duvets and curtains, ready to make home feel like home.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="photo-placeholder service-photo photo-business">
+              <img src="assets/photos/laundry-team.jpg" alt="Laundry team working in a professional laundry facility" loading="lazy">
+            </div>
+            <div class="service-copy">
+              <div><p class="card-kicker">04 / FOR YOUR BUSINESS</p><h3>Business laundry</h3></div>
+              <p>Reliable linen and uniform care for guesthouses, salons and local teams.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="photo-placeholder service-photo photo-press">
+              <img src="assets/photos/dry-cleaning.jpg" alt="Garments arranged and ready to wear" loading="lazy">
+            </div>
+            <div class="service-copy">
+              <div><p class="card-kicker">05 / READY TO WEAR</p><h3>Ironing &amp; pressing</h3></div>
+              <p>Crisp shirts, school uniforms and workwear, ready for the week ahead.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="photo-placeholder service-photo photo-home">
+              <img src="assets/photos/wash-and-fold.jpg" alt="Careful garment care in a laundry facility" loading="lazy">
+            </div>
+            <div class="service-copy">
+              <div><p class="card-kicker">06 / LITTLE FIXES</p><h3>Stains &amp; repairs</h3></div>
+              <p>Stain treatment and small fixes to help your favourite pieces last longer.</p>
+            </div>
+          </article>
+        </div>
+        <p class="section-footnote"><img src="assets/lucide-icons/icons/leaf.svg" alt=""> Not sure what your garment needs? Just ask us before booking.</p>
+      </div>
+    </section>
+
+    <section class="process-section" id="process">
+      <div class="container process-layout">
+        <div class="process-intro">
+          <p class="eyebrow eyebrow-light">Simple from the start</p>
+          <h2>More living.<br><em>Less laundry.</em></h2>
+          <p>We keep laundry day simple, with a friendly local team at every step.</p>
+          <a class="button button-light" href="#booking">Let's get started</a>
+        </div>
+        <div class="process-steps">
+          <article class="process-step"><span>01</span><div><h3>Choose a time</h3><p>Send us a pickup request on WhatsApp.</p></div><img src="assets/lucide-icons/icons/calendar-check.svg" alt=""></article>
+          <article class="process-step"><span>02</span><div><h3>We collect</h3><p>We meet you at home, work or somewhere easy.</p></div><img src="assets/lucide-icons/icons/truck.svg" alt=""></article>
+          <article class="process-step"><span>03</span><div><h3>Freshen up</h3><p>Your items get the right clean and careful finish.</p></div><img src="assets/lucide-icons/icons/sparkles.svg" alt=""></article>
+          <article class="process-step"><span>04</span><div><h3>Back to you</h3><p>Clean, folded and ready for whatever's next.</p></div><img src="assets/lucide-icons/icons/check.svg" alt=""></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="care-section" id="care">
+      <div class="container care-layout">
+        <div class="care-image">
+          <img src="assets/photos/laundry-team.jpg" alt="Laundry professionals carefully handling a customer's load" loading="lazy">
+          <span class="care-image-label"><img src="assets/lucide-icons/icons/heart.svg" alt=""> Carefully handled, locally delivered</span>
+        </div>
+        <div class="care-copy">
+          <p class="eyebrow">Good care is personal</p>
+          <h2>Look after your clothes.<br><em>Look after your time.</em></h2>
+          <p class="care-intro">A laundry service should make the week feel easier, not add another thing to manage. We keep it personal, practical and close to home.</p>
+          <div class="care-points">
+            <article><span>01</span><div><h3>Care that fits the garment</h3><p>Tell us what matters and we'll take care with the pieces you trust us with.</p></div></article>
+            <article><span>02</span><div><h3>A local team you can reach</h3><p>Ask a question or arrange a collection directly with our Gaborone team.</p></div></article>
+            <article><span>03</span><div><h3>Pickup that works around you</h3><p>Choose a convenient place and share your preferred collection time.</p></div></article>
+          </div>
+          <a class="care-link" href="#booking">Tell us what you need</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="pricing">
+      <div class="container pricing-layout">
+        <div class="pricing-copy">
+          <p class="eyebrow">No surprises</p>
+          <h2>Good service.<br><em>Fair prices.</em></h2>
+          <p>Here is a starting point for our most-loved services. Get in touch for a tailored quote or to confirm current rates.</p>
+          <span class="price-note"><img src="assets/lucide-icons/icons/heart.svg" alt=""> Local prices, thoughtfully considered.</span>
+        </div>
+        <div class="price-card">
+          <div class="price-card-heading"><span>POPULAR SERVICES</span><span>FROM</span></div>
+          <div class="price-row"><span>Wash &amp; fold <small>per kg</small></span><strong>P30</strong></div>
+          <div class="price-row"><span>Shirt or blouse <small>dry clean</small></span><strong>P25</strong></div>
+          <div class="price-row"><span>Trousers or skirt <small>dry clean</small></span><strong>P35</strong></div>
+          <div class="price-row"><span>Two-piece suit <small>dry clean</small></span><strong>P90</strong></div>
+          <div class="price-row"><span>Dress <small>dry clean</small></span><strong>P60</strong></div>
+          <div class="price-row"><span>Coat or jacket <small>dry clean</small></span><strong>P80</strong></div>
+          <div class="price-row"><span>Ironing <small>per item</small></span><strong>P10</strong></div>
+          <div class="price-row"><span>Duvet or blanket <small>each</small></span><strong>P120</strong></div>
+          <a class="price-link" href="#booking">Ask about your items</a>
+          <p class="price-disclaimer">Sample prices in Botswana Pula (BWP). Express service (same day) adds 50%. Confirm rates and delivery fees before booking.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="areas-section" id="areas">
+      <div class="container areas-layout">
+        <div>
+          <p class="eyebrow">Close to home</p>
+          <h2>Gaborone, we're<br><em>on our way.</em></h2>
+        </div>
+        <div class="areas-content">
+          <p>Pickup and delivery in Gaborone and nearby neighbourhoods. Not sure if you're in range? Send us your area and we'll let you know.</p>
+          <div class="area-list" aria-label="Current service areas">
+            <span>CBD</span><span>The Village</span><span>Broadhurst</span><span>Block 6</span><span>Block 8</span><span>Block 9</span><span>Extension 12</span><span>Phakalane</span><span>Gaborone North</span><span>Tlokweng</span><span>Mogoditshane</span><span>Gaborone West</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section kind-words">
+      <div class="container testimonial-layout">
+        <div class="testimonial-heading">
+          <p class="eyebrow">A little love from Gabs</p>
+          <h2>What our customers <em>say.</em></h2>
+          <p>Thoughtful care, reliable pickups and fresh laundry make all the difference.</p>
+          <a class="testimonial-cta" href="#services">Explore our services</a>
+          <p class="testimonial-note">Sample reviews and profile photos — replace with real customer feedback before publishing.</p>
+        </div>
+        <div class="testimonial-grid">
+          <figure class="testimonial-card">
+            <img class="customer-avatar" src="assets/photos/customer-kabelo.jpg" alt="" loading="lazy">
+            <div class="testimonial-copy">
+              <div class="testimonial-author"><strong>Kabelo</strong><small>Block 8</small></div>
+              <blockquote>“My suits have never looked this good. Pickup was right on time.”</blockquote>
+            </div>
+            <img class="quote-icon" src="assets/lucide-icons/icons/quote.svg" alt="" aria-hidden="true">
+          </figure>
+          <figure class="testimonial-card testimonial-highlight">
+            <img class="customer-avatar" src="assets/photos/customer-neo.jpg" alt="" loading="lazy">
+            <div class="testimonial-copy">
+              <div class="testimonial-author"><strong>Neo</strong><small>Phakalane</small></div>
+              <blockquote>“We use them for our guesthouse linen every week. Reliable and neat.”</blockquote>
+            </div>
+            <img class="quote-icon" src="assets/lucide-icons/icons/quote.svg" alt="" aria-hidden="true">
+          </figure>
+          <figure class="testimonial-card">
+            <img class="customer-avatar" src="assets/photos/customer-mpho.jpg" alt="" loading="lazy">
+            <div class="testimonial-copy">
+              <div class="testimonial-author"><strong>Mpho</strong><small>Broadhurst</small></div>
+              <blockquote>“School uniforms back crisp in two days. Highly recommended.”</blockquote>
+            </div>
+            <img class="quote-icon" src="assets/lucide-icons/icons/quote.svg" alt="" aria-hidden="true">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro">
+          <p class="eyebrow">A few helpful answers</p>
+          <h2>Good to <em>know.</em></h2>
+          <p>Have another question? Send our team a message and we'll be happy to help.</p>
+          <a class="text-link" href="#booking">Ask us on WhatsApp</a>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>How do I arrange a pickup?<span aria-hidden="true"></span></summary>
+            <p>Use the booking form and we'll prepare a WhatsApp message with your request. Send it to confirm a suitable pickup time with our team.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Which parts of Gaborone do you cover?<span aria-hidden="true"></span></summary>
+            <p>We serve Gaborone and nearby areas, including the CBD, Broadhurst, Phakalane, Tlokweng and Mogoditshane. Ask us to confirm your location.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How long will my order take?<span aria-hidden="true"></span></summary>
+            <p>Turnaround depends on the service and items. We'll confirm the expected timing when you arrange your pickup.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can you clean delicate or special-care items?<span aria-hidden="true"></span></summary>
+            <p>Share the item and its care-label details with us first. We'll confirm whether we can help and how it should be handled.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+      <div class="container booking-layout">
+        <div class="booking-copy">
+          <p class="eyebrow eyebrow-light">Your next laundry day, sorted</p>
+          <h2>Let's make room<br>for <em>your day.</em></h2>
+          <p>Tell us a little about your pickup. We'll open WhatsApp with your request ready to send.</p>
+          <div class="contact-details">
+            <a href="tel:+26771000000"><img src="assets/lucide-icons/icons/phone.svg" alt=""> +267 71 000 000</a>
+            <a href="mailto:hello@freshfold.example"><img src="assets/lucide-icons/icons/mail.svg" alt=""> hello@freshfold.example</a>
+            <span><img src="assets/lucide-icons/icons/map-pin.svg" alt=""> Main Mall area, Gaborone</span>
+          </div>
+          <p class="contact-note">Replace the sample contact details with your business information before publishing.</p>
+        </div>
+        <form class="booking-form" id="booking-form">
+          <input type="hidden" name="pickupWindow" id="pickup-window">
+          <div class="form-heading"><span>LET'S GET YOU BOOKED</span><span class="form-step">01 — 01</span></div>
+          <label for="customer-name">Your name</label>
+          <input id="customer-name" name="name" autocomplete="name" placeholder="e.g. Naledi" required>
+          <label for="customer-area">Pickup area or address</label>
+          <input id="customer-area" name="area" autocomplete="street-address" placeholder="e.g. Block 8, Gaborone" required>
+          <label for="service-type">What can we help with?</label>
+          <select id="service-type" name="service">
+            <option>Wash &amp; fold</option>
+            <option>Dry cleaning</option>
+            <option>Ironing &amp; pressing</option>
+            <option>Linen &amp; bedding</option>
+            <option>Business laundry</option>
+            <option>Something else</option>
+          </select>
+          <label for="customer-notes">Anything else? <span>(optional)</span></label>
+          <textarea id="customer-notes" name="notes" rows="3" placeholder="A good time to collect, special care, number of items…"></textarea>
+          <button class="button button-dark form-submit" type="submit">Continue to WhatsApp</button>
+          <p class="form-footnote">No account needed. Your message goes straight to our team.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true"><img src="assets/lucide-icons/icons/sparkles.svg" alt=""></span><span>freshfold<span class="brand-period">.</span></span></a>
+      <p>Good care for the clothes you live in.<br>Locally owned in Gaborone, Botswana.</p>
+      <div class="footer-hours"><span>MON – FRI <strong>07:30 – 18:00</strong></span><span>SAT <strong>08:00 – 14:00</strong></span><span>SUN <strong>By appointment</strong></span></div>
+      <a class="back-to-top" href="#home">Back to top</a>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="current-year">2026</span> FreshFold Laundry &amp; Dry Cleaning</span><span>Made with care in Gaborone</span><span>Photos via <a href="https://www.pexels.com/" target="_blank" rel="noopener noreferrer">Pexels</a></span></div>
+  </footer>
+  <a class="floating-book" href="#booking"><img src="assets/lucide-icons/icons/message-circle.svg" alt=""> Book a pickup</a>
+</body>
+</html>
