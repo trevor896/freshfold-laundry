@@ -14,6 +14,6 @@ Then open `http://localhost:8000`.
 
 ## GitHub Pages
 
-The site is published from `docs/` by the GitHub Actions workflow in `.github/workflows/pages.yml` whenever changes are pushed to `main`. Enable **Settings → Pages → Build and deployment → Source → GitHub Actions** once in the repository settings.
+The site is published from the `/docs` folder on the `main` branch. Changes pushed to `main` are deployed automatically by GitHub Pages.
 
 Before publishing, replace the sample phone number, email, service details, prices, testimonials and profile portraits with the business's real information.
